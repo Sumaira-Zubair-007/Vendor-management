@@ -33,12 +33,23 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 // CRUD RESTful Routes
-$routes->get('users-list', 'UserCrud::index');
-$routes->get('user-form', 'UserCrud::create');
-$routes->post('submit-form', 'UserCrud::store');
-$routes->get('edit-view/(:num)', 'UserCrud::singleUser/$1');
-$routes->post('update', 'UserCrud::update');
-$routes->get('delete/(:num)', 'UserCrud::delete/$1');
+$routes->get('vendors-list', 'VendorCrud::index');
+$routes->get('user-form', 'VendorCrud::create');
+$routes->post('submit-form', 'VendorCrud::store');
+$routes->get('edit-view/(:num)', 'VendorCrud::singleUser/$1');
+$routes->post('update', 'VendorCrud::update');
+$routes->get('delete/(:num)', 'VendorCrud::delete/$1');
+
+
+// CRUD RESTful Routes
+
+$routes->get('proposal-list', 'VendorPrposalCrud::index');
+$routes->get('proposal-form', 'VendorPrposalCrud::create');
+$routes->post('submit-form', 'VendorPrposalCrud::store');
+$routes->get('edit-view/(:num)', 'VendorPrposalCrud::singleUser/$1');
+$routes->post('update', 'VendorPrposalCrud::update');
+$routes->get('delete/(:num)', 'VendorPrposalCrud::delete/$1');
+$routes->get('benchmark', 'VendorPrposalCrud::benchmark');
 
 /**
  * --------------------------------------------------------------------

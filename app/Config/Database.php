@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'sumaira',
         'password' => 'Sumaira@123',
-        'database' => 'user',
+        'database' => 'Vendor-mgmt',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
